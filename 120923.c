@@ -8,9 +8,9 @@ int* solution(int num, int total) {
 
     // num * start + (num - 1) * num / 2 = total;
     int start = (total - (num - 1) * num / 2) / num;
-    
+        
     for(int i = 0;i < num;i++){
-        answer[i] = start + i;
+        answer[i] = start + i; 
     }
     
     return answer;

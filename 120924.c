@@ -12,7 +12,7 @@ int solution(int common[], size_t common_len) {
         answer = common[common_len - 1] + diff1;
     }
     else{                           // 등비
-        answer = common[common_len - 1] * common[2] / common[1];       
+        answer = common[common_len - 1] * common[2] / common[1];        
     }    
     
     return answer;
