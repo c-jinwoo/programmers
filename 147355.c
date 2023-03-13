@@ -15,7 +15,7 @@ int solution(const char* t, const char* p) {
         num_p += powers * (p[i] - 48);
     }
     
-    // 부분문자열 돌아가면서 계산
+    // 부분문자열 돌아가며 계산
     for(int i = 0;i <= strlen(t) - strlen(p);i++){
         long long num_portion = 0;
         powers = 1;
@@ -24,7 +24,7 @@ int solution(const char* t, const char* p) {
             num_portion *= 10;
             num_portion += powers * (t[j] - 48);
         }
-        
+                
         if(num_portion <= num_p){
             answer++;
         }
